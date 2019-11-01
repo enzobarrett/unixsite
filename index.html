@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<title>Unix Watch</title>
+    </head>
+    <style>
+	html {
+	    background-color: red;
+	}
+	.blink {
+	    -webkit-animation: blink 1.75s linear infinite;
+	    -moz-animation: blink 1.75s linear infinite;
+	    -ms-animation: blink 1.75s linear infinite;
+	    -o-animation: blink 1.75s linear infinite;
+	    animation: blink 1.75s linear infinite;
+	    margin-bottom: 0;
+	}
+	@-webkit-keyframes blink {
+	    0% { opacity: 1; }
+	    50% { opacity: 1; }
+	    50.01% { opacity: 0; }
+	    100% { opacity: 0; }
+	}
+	@-moz-keyframes blink {
+	    0% { opacity: 1; }
+	    50% { opacity: 1; }
+	    50.01% { opacity: 0; }
+	    100% { opacity: 0; }
+	}
+	@-ms-keyframes blink {
+	    0% { opacity: 1; }
+	    50% { opacity: 1; }
+	    50.01% { opacity: 0; }
+	    100% { opacity: 0; }
+	}
+	@-o-keyframes blink {
+	    0% { opacity: 1; }
+	    50% { opacity: 1; }
+	    50.01% { opacity: 0; }
+	    100% { opacity: 0; }
+	}
+	@keyframes blink {
+	    0% { opacity: 1; }
+	    50% { opacity: 1; }
+	    50.01% { opacity: 0; }
+	    100% { opacity: 0; }
+	}
+	tr {
+	    outline: thin solid;
+	}
+	th {
+	    border-right: 1px solid;
+	}
+	table {
+	}
+	#unix {
+	    font-family: monospace, monospace;
+	    font-size: 4vw;
+	    margin: 0;
+	}
+	#img1 {
+	    position: absolute;
+	    top:50px;
+	    right:50px;
+	}
+    </style>
+    <h1 class="blink">Unix Time Watch - COMING SOON</h1>
+    <h2 id="unix">0000000000</h2>
+    <h2>Pricing Table</h2>
+    <table>
+	<tr>
+	    <th></th> 
+	    <th>Watch w/ no battery</th>
+	    <th>Watch with rechargable lipo</th>
+	</tr>
+	<tr>
+	    <th>Price</th>
+	    <th>$25</th>
+	    <th>$35</th>
+	</tr>
+    </table>
+    <img id="img1" src="watch1.jpg" alt="photo of the watch" width="50%">
+    <script src="displayUnix.js"></script>
+</html>
