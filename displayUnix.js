@@ -1,5 +1,16 @@
+setInterval(mousemov, 10);
 display();
+document.onmousemove = function(e) {
+    var event = e || window.event;
+    window.mouseX = event.clientX;
+    window.mouseY = event.clientY;
+}
 function display() {
-    document.getElementById("unix").innerHTML = Math.round(new Date().getTime()/1000);
+    document.getElementsByClassName("unix")[0].innerHTML = Math.round(new Date().getTime()/1000);
+    document.getElementsByClassName("unix")[1].innerHTML = Math.round(new Date().getTime()/1000);
     window.setTimeout(display, 1000);
+}
+function mousemov() {
+    document.getElementById("unixmover").style.left = (window.mouseX + 10) + "px";
+    document.getElementById("unixmover").style.top = (window.mouseY - 10 + window.scrollY) + "px";
 }

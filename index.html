@@ -4,6 +4,19 @@
 	<title>Unix Watch</title>
     </head>
     <style>
+	#unixmover {
+	    position: absolute;
+	    z-index: 100000;
+	    background-color: white;
+	}
+	.top {
+	    margin-top: 50px;
+	}
+	.display {
+	    width: 25%;
+	    margin-left: 50px;
+	    display: block;
+	}
 	html {
 	    background-color: red;
 	}
@@ -13,6 +26,14 @@
 	    -ms-animation: blink 1.75s linear infinite;
 	    -o-animation: blink 1.75s linear infinite;
 	    animation: blink 1.75s linear infinite;
+	    margin-bottom: 0;
+	}
+	.blink2 {
+	    -webkit-animation: blink 1s linear infinite;
+	    -moz-animation: blink 1s linear infinite;
+	    -ms-animation: blink 1s linear infinite;
+	    -o-animation: blink 1s linear infinite;
+	    animation: blink 1s linear infinite;
 	    margin-bottom: 0;
 	}
 	@-webkit-keyframes blink {
@@ -54,8 +75,10 @@
 	}
 	table {
 	}
-	#unix {
+	.unix {
 	    font-family: monospace, monospace;
+	}
+	#unix {
 	    font-size: 4vw;
 	    margin: 0;
 	}
@@ -65,8 +88,9 @@
 	    right:50px;
 	}
     </style>
+    <body>
     <h1 class="blink">Unix Time Watch - COMING SOON</h1>
-    <h2 id="unix">0000000000</h2>
+    <h2 id="unix" class="unix">0000000000</h2>
     <h2>Pricing Table</h2>
     <table>
 	<tr>
@@ -80,6 +104,15 @@
 	    <th>$35</th>
 	</tr>
     </table>
-    <img id="img1" src="watch1.jpg" alt="photo of the watch" width="50%">
+    <h2 id="unixmover" class="unix">0000000000</h2>
+    <h1 class="blink2">5 AWESOME DISPLAY MODES!!!</h1>
+    <img id="img1" src="watch2.jpg" alt="photo of the watch" width="50%">
+    <img class="display top" src="display1.jpg" alt="display mode 1">
+    <img class="display" src="display2.jpg" alt="display mode 1">
+    <img class="display" src="display3.jpg" alt="display mode 1">
+    <img class="display" src="display4.jpg" alt="display mode 1">
+    <img class="display" src="display5.jpg" alt="display mode 1">
+    </body>
+
     <script src="displayUnix.js"></script>
 </html>
